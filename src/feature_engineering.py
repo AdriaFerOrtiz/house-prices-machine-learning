@@ -53,7 +53,7 @@ def add_engineered_features(
 
     # 1. Total living area: above-ground living area + basement.
     # Missing basement values are treated as zero when the basement is absent.
-    X_fe["TotalLivingArea"] = (
+    X_fe["TotalAreaIncludingBasement"] = (
         X_fe["GrLivArea"] +
         X_fe["TotalBsmtSF"].fillna(0)
     )
@@ -101,8 +101,9 @@ def add_engineered_features(
 
     # 7. Interaction between overall quality and total living area.
     if include_interactions:
-        X_fe["QualityAreaInteraction"] = (
-            X_fe["OverallQual"] * X_fe["TotalLivingArea"]
+        X_fe["QualityTotalAreaInteraction"] = (
+            X_fe["OverallQual"] *
+            X_fe["TotalAreaIncludingBasement"]
         )
 
     return X_fe
