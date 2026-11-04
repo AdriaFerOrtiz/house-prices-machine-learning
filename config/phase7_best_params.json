@@ -1,0 +1,18 @@
+{
+    "svr_best_params": {
+        "regressor__model__C": 5.4182823195332395,
+        "regressor__model__epsilon": 0.003124565071260871,
+        "regressor__model__gamma": 0.001095266274863256
+    },
+    "gradient_boosting_best_params": {
+        "regressor__model__learning_rate": 0.04597505784732168,
+        "regressor__model__max_depth": 3,
+        "regressor__model__min_samples_leaf": 6,
+        "regressor__model__n_estimators": 589,
+        "regressor__model__subsample": 0.6831766651472755
+    },
+    "ensemble_weights": {
+        "SVR": 2,
+        "Gradient Boosting": 1
+    }
+}
