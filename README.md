@@ -104,7 +104,6 @@ The ensemble generated predictions for the 1,459 records in the test dataset, pr
 
 ## Results
 
-<|OPENAI|6b2d0a|CODE|>
 
 | Model | CV RMSLE | Validation RMSLE | Kaggle RMSLE |
 |---|---:|---:|---:|
